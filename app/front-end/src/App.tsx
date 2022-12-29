@@ -5,13 +5,11 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
       <ContextProvider>
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
       </ContextProvider>
-    </div>
   );
 }
 
