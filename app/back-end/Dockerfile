@@ -3,5 +3,5 @@ WORKDIR /app-backend
 COPY package* ./
 RUN npm install
 COPY . .
-CMD ["npm", "start"]
+CMD ["npm","run","dev"]
 EXPOSE 3001
