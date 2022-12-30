@@ -22,14 +22,19 @@ git clone git@github.com:felmartins1985/cashforce.git
 
 Para rodar a aplicação dockerizada, instalar as dependências e iniciar as aplicações:
 <-- na raiz do projeto -->
-cd app && npm run compose:up // para subir o docker-compose
-docker exec -it app_backend /bin/sh // para acessar o container do backend
-npm run db:reset // para criar as tabelas e popular no banco de dados
-exit // para sair do container do backend
+npm run compose:up // para subir o docker-compose
 
 Para parar a aplicação dockerizada:
 <-- na raiz do projeto -->
-cd app && npm run compose:down // para parar os containers
+npm run compose:down // para parar os containers
+
+Para rodar os testes do back-end:
+<-- na raiz do projeto -->
+cd app/back-end && npm run test
+
+Para rodar os testes do front-end:
+<-- na raiz do projeto -->
+cd app/front-end && npm run test
 ```
 
 ### Endpoints
