@@ -1,9 +1,8 @@
 import axios from 'axios';
-
+export const api = axios.create({baseURL: 'http://localhost:3001/'});
 const requestFindAll= async ( ) =>{
   try {
-    const URL = 'http://localhost:3001/';
-    const response = await axios.get(URL);
+    const response = await api.get("/");
     return response.data;
   } catch (error: any) {
     console.log(error)

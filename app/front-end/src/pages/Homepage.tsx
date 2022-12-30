@@ -28,7 +28,7 @@ function HomePage() {
   },[]);
   return (
     <div >
-      <div className='bg-[#FBFDFE] absolute w-[1560px] h-[900px]'>
+      <div data-testid='cashlogo' className='bg-[#FBFDFE] absolute w-[1560px] h-[900px]'>
         <img className='absolute mt-[25px] ml-[24px] w-[29.58px] h-[20.51px]' src={Vectorverde} alt='vetorVerde'></img>
         <img className='absolute mt-[34.49px] ml-[33.05px] w-[29.58px] h-[20.51px]' src={Vectorpreta} alt='vetorPreto'></img>
         <img className='absolute mt-[28.5px] ml-[67.97px] w-[16.46px] h-[19.7px]' src={Vectorc} alt='vetorC'></img>
@@ -40,19 +40,18 @@ function HomePage() {
         <img className='absolute mt-[35.14px] ml-[151.02px] w-[8.32px] h-[12.81px]' src={Vectorr} alt='vetorR'></img>
         <img className='absolute mt-[35.15px] ml-[159.3px] w-[11.47px] h-[13.06px]' src={Vectorc2} alt='vetorC2'></img>
         <img className='absolute mt-[35.15px] ml-[171.26px] w-[12.74px] h-[13.06px]' src={Vectore} alt='vetorE'></img>
-        <img className='absolute mt-[105px]  ml-[25px] box-border w-[24px] h-[14.06px]' src={Vectormao} alt='Mao'></img>
-        <h2 className='absolute w-[85px] h-[18px] text-[#00AD8C] mt-[103px] ml-[64px] flex flex-none order-0 grow-0 not-italic font-medium text-[14px] leading-[18px] items-center'>Notas fiscais</h2>
+        <img data-testid="handsgreen" className='absolute mt-[105px]  ml-[25px] box-border w-[24px] h-[14.06px]' src={Vectormao} alt='Mao'></img>
+        <h2 data-testid="receipt" className='absolute w-[85px] h-[18px] text-[#00AD8C] mt-[103px] ml-[64px] flex flex-none order-0 grow-0 not-italic font-medium text-[14px] leading-[18px] items-center'>Notas fiscais</h2>
         <div className='w-[4px] h-[64px] rounded bg-[#00AD8C] mt-[80px] flex flex-none order-0 grow-0'></div>
-
       </div>
       <div className='absolute w-[1272px] h-[900px] left-[288px] bg-[#FFFFFF] right-0 bottom-0 top-0 shadow-cash rounded-[15px_0px_0px_15px]'>
       <p className='h-[0px] border-[#DFE2EB] border-solid border-[1px]  w-[1272px] absolute top-[64px] left-[0%] right-[0%] bottom-[0%]'></p>
       <div className='absolute flex flex-col items-end w-[1272px] h-[64px] pt-[16px] pr-[46px] pb-[16px] pl-[46px] gap-[10px] left-[0px] top-[0px] bg-[#FFFFFF] rounded-[12px_0px_0px_0px]'></div>
-      <img className='absolute mt-[111px]  ml-[48px] box-border w-[24px] h-[14.06px]' src={Vectormaopreta} alt='MaoPreta'></img>
+      <img data-testid="handsblue" className='absolute mt-[111px]  ml-[48px] box-border w-[24px] h-[14.06px]' src={Vectormaopreta} alt='MaoPreta'></img>
 
-      <h1 className='w-[160px] h-[28px] left-[33px] font-bold text-[24px] leading-7 mt-[104px] ml-[81px] not-italic text-[#021B51] flex-none grow-0 order-1'>Notas fiscais</h1>
-      <h3 className='h-[20px] w-[255] text-[#727D94] not-italic font-normal text-[14px] leading-5 flex-none grow-0 order-1 mt-[5px] ml-[48px]'>Visualize as notas fiscais que você tem</h3>
-        <table>
+      <h1 data-testid="invoice" className='w-[160px] h-[28px] left-[33px] font-bold text-[24px] leading-7 mt-[104px] ml-[81px] not-italic text-[#021B51] flex-none grow-0 order-1'>Notas fiscais</h1>
+      <h3 data-testid="showinvoice" className='h-[20px] w-[255] text-[#727D94] not-italic font-normal text-[14px] leading-5 flex-none grow-0 order-1 mt-[5px] ml-[48px]'>Visualize as notas fiscais que você tem</h3>
+        <table data-testid="table">
           <thead>
             <tr>
             <th className='ml-[78px] mt-[22px] text-[#A1A8B8] font-bold absolute  not-italic text-[12px] leading-4 flex items-center uppercase rounded'>Nota Fiscal</th>
