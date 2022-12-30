@@ -46,4 +46,8 @@ cd app/front-end && npm run test
 |---|---|---|
 | `GET` | Retorna as notas fiscais | http://localhost:3001 |
 
+### Demonstração
 
+<p align="center">
+  <img src="https://github.com/felmartins1985/cashforce/blob/main/app/front-end/src/images/demonstracao.png" alt="Cashforce - Demostração"/>
+</p>
