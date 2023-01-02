@@ -1,6 +1,8 @@
 import React from 'react';
 import dateFormater from '../services/moment';
-function CardReceipt({value}: any) {
+import { IReceipt } from '../interface/IReceipt';
+
+function CardReceipt({value}: IReceipt) {
   const statusBuyer=
     [
     'Pendente de confirmação',
@@ -16,7 +18,6 @@ function CardReceipt({value}: any) {
     function formatValue(valor:number) {
       return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
-    console.log(formatValue(Number(value.value)));
   return (
           <tr data-testid={`orders-${value.id}`} className=' ml-[48px] mt-[16px] w-[1177px] h-[48px] bg-[#FFFFFF] box-border rounded-md border-[#DFE2EB] border-solid border-[1px] flex-none grow-0 order-1'>
             <td className=' absolute mt-[15px] ml-[30px] w-[30px] h-[18px] not-italic text-[14px] leading-[18px] flex items-center text-[#4D5566]'>{value.nNf}</td>
