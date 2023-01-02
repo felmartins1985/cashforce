@@ -8,7 +8,7 @@ export default class OrdersController {
     this.cashService = new CashService();
   }
 
-  findAll = async (req: Request, res: Response) => {  
+  findAll = async (_req: Request, res: Response) => {
     const { code, orders } = await this.cashService.findAll();
     return res.status(code).json(orders);
   };

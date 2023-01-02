@@ -5,7 +5,7 @@ export default class CashService {
     private cashModel = new CashModel(),
   ) { }
 
-  findAll = async () => {  
+  findAll = async () => {
     const orders = await this.cashModel.findAll();
     return { code: 200, orders };
   };
